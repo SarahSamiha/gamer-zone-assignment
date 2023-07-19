@@ -1,15 +1,37 @@
 :root {
     --pink-color: #FF42A5;
     --white: #FFF;
+    --main-margin: 100px 100px;
 
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
+/* For all */
 * {
     font-family: 'Work Sans', sans-serif;
     margin: 0;
 }
+.gradient-text{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.title {
+    color: #0B0223;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.description{
+    color: #534C64;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.description-opt{
+    font-weight: 500;
+}
+
 
 /* navbar */
 
@@ -31,12 +53,6 @@ nav {
 
 .pink-text {
     color: var(--pink-color);
-}
-
-.nav-title {
-    color: #0B0223;
-    font-size: 3rem;
-    font-weight: 700;
 }
 
 nav>ul {
@@ -75,8 +91,8 @@ nav a {
 }
 
 nav .page-title img {
-    width: 100%;
-    height: 70%;
+    width: 90%;
+    height: 60%;
 }
 
 /* banner */
@@ -100,7 +116,7 @@ nav .page-title img {
     text-transform: uppercase;
 }
 
-.gradient-text {
+.banner-gradient-text {
     font-size: 5rem;
     font-weight: 800;
     text-transform: uppercase;
@@ -111,9 +127,6 @@ nav .page-title img {
 }
 
 .banner-features {
-    color: #534C64;
-    font-size: 1rem;
-    font-weight: 500;
     text-transform: lowercase;
     margin-bottom: 15px;
 }
@@ -141,6 +154,31 @@ nav .page-title img {
     height: 500px;
 }
 
+/* Funny Videos */
+
+.funny-videos{
+    margin: var(--main-margin);
+    text-align: center;
+}
+.funny-videos h3{
+    margin-bottom: 15px;
+}
+.funny-videos-card-container{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+.funny-videos-card{
+    text-align: left;
+}
+.funny-videos-card-container img{
+    width: 100%;
+}
+.funny-videos-card-container p{
+    margin-top: 15px;
+}
+
 
 
 
@@ -157,7 +195,7 @@ nav .page-title img {
 
 @media screen and (max-width:456px) {
 
-    nav, nav>ul, .banner{
+    nav, nav>ul, .banner, .funny-videos{
         flex-direction: column;
         padding: 20px 20px;
     }
@@ -170,7 +208,7 @@ nav .page-title img {
     }
 
     nav .page-title img {
-        width: 30%;
+        width: 20%;
     }
     .banner-content{
         padding: 0px 20px;
@@ -182,5 +220,12 @@ nav .page-title img {
     .banner-img img{
         width:400px;
         height: 400px;
+    }
+    .funny-videos{
+        margin: 20px 50px;
+    }
+    .funny-videos-card-container{
+        grid-template-columns: 1fr;
+        gap: 50px;
     }
 }

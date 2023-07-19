@@ -235,7 +235,11 @@ nav .page-title img {
     gap: 50px;
     align-items: center;
 }
-
+.another-feature{
+    flex-direction: row-reverse;
+    position: relative;
+    z-index: 1;
+}
 .features-img-container {
     display: flex;
     align-items: baseline;
@@ -245,13 +249,20 @@ nav .page-title img {
     height: 75%;
     width: 75%;
 }
-
+.another-feature #img-big {
+    position: relative;
+    right: 110px;
+}
 .features-img-container #img-small {
     height: 40%;
     width: 40%;
     position: relative;
     top: 70px;
     right: 110px;
+}
+.another-feature #img-small {
+    left: 70px;
+    z-index: 1;
 }
 
 .features-content {

@@ -12,6 +12,9 @@
     font-family: 'Work Sans', sans-serif;
     margin: 0;
 }
+.pink-text {
+    color: var(--pink-color);
+}
 .gradient-text{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
@@ -178,6 +181,33 @@ nav .page-title img {
 .funny-videos-card-container p{
     margin-top: 15px;
 }
+/* Features */
+
+.features{
+    display: flex;
+    margin: var(--main-margin);
+    gap: 50px;
+    align-items: center;
+}
+.features-img-container{
+    display: flex;
+    align-items: baseline;
+}
+.features-img-container #img-big{
+    height: 75%;
+    width: 75%;
+}
+.features-img-container #img-small{
+    height: 40%;
+    width: 40%;
+    position: relative;
+    top: 70px;
+    right: 110px;
+}
+.features-content{
+    max-width: 280px;
+    padding: 50px;
+}
 
 
 
@@ -199,7 +229,7 @@ nav .page-title img {
         flex-direction: column;
         padding: 20px 20px;
     }
-    .banner{
+    .banner, .features{
         flex-direction: column-reverse;
     }
 
@@ -210,7 +240,7 @@ nav .page-title img {
     nav .page-title img {
         width: 20%;
     }
-    .banner-content{
+    .banner-content, .features-content{
         padding: 0px 20px;
         margin-top: 10px;
     }
@@ -221,11 +251,30 @@ nav .page-title img {
         width:400px;
         height: 400px;
     }
-    .funny-videos{
+    .funny-videos, .features{
         margin: 20px 50px;
     }
     .funny-videos-card-container{
         grid-template-columns: 1fr;
         gap: 50px;
     }
+    .features-content{
+        text-align: center;
+    }
+    .features-content p{
+        margin-top: 15px;
+    }
+
+    .features-img-container #img-big{
+        height: 80%;
+        width: 80%;
+    }
+    .features-img-container #img-small{
+        height: 40%;
+        width: 40%;
+        position: relative;
+        top: 60px;
+        right: 70px;
+    }
+    
 }

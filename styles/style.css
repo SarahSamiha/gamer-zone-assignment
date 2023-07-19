@@ -269,6 +269,9 @@ nav .page-title img {
     max-width: 280px;
     padding: 50px;
 }
+.another-feature{
+    text-align: right;
+}
 
 /* Categories */
 .categories {
@@ -424,6 +427,9 @@ footer p {
         height: 80%;
         width: 80%;
     }
+    .another-feature #img-big {
+        right: 60px;
+    }
 
     .features-img-container #img-small {
         height: 40%;
@@ -431,6 +437,12 @@ footer p {
         position: relative;
         top: 60px;
         right: 70px;
+    }
+    .another-feature #img-small{
+        left: 0px;
+    }
+    .another-feature{
+        margin-bottom: 100px;
     }
 
     .categories {
@@ -521,6 +533,9 @@ footer p {
     .funny-videos,
     .features {
         margin: 20px 50px;
+    }
+    .another-feature{
+        margin-bottom: 100px;
     }
 
     .funny-videos-card-container {

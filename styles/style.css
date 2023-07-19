@@ -262,7 +262,7 @@ nav .page-title img {
 footer {
     background-color: #0B0223;
     display: grid;
-    gap: 30px;
+    gap: 50px;
     padding: 70px 300px;
 }
 .about-menu>ul{
@@ -281,7 +281,7 @@ footer {
 }
 .social-links{
     display: flex;
-    gap: 50px;
+    gap: 30px;
     justify-content: space-around;
     max-width: 300px;
     margin: 0px auto;
@@ -405,6 +405,16 @@ footer p{
     .categories-btn img {
         height: 30px;
         width: 30px;
+    }
+    footer{
+        padding: 70px 30px;
+    }
+    .about-menu>ul, .social-links, .security>ul{
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .social-links{
+        margin: 50px;
     }
 
 }
